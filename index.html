@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>t Option — Wear Your Choice</title>
+<meta name="description" content="t Option — Wear Your Choice. T-Shirts, Panjabi, Pants and Customized Jerseys.">
+<style>
+:root{--navy:#292466;--gold:#f5c928;--cream:#fffdf7;--dark:#17152b;--muted:#6c6a78}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:var(--cream)}
+header{position:sticky;top:0;z-index:20;background:rgba(41,36,102,.97);padding:10px 6%;display:flex;align-items:center;justify-content:space-between;box-shadow:0 3px 18px #0002}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:#fff;font-weight:700;font-size:19px}
+.brand img{width:50px;height:50px;border-radius:8px;object-fit:cover}
+nav{display:flex;gap:26px}
+nav a{color:#fff;text-decoration:none;font-size:14px}
+nav a:hover{color:var(--gold)}
+.hero{min-height:78vh;padding:70px 7%;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:45px;background:linear-gradient(135deg,var(--navy),#18143f);color:#fff}
+.kicker{color:var(--gold);font-weight:700;letter-spacing:3px;margin-bottom:16px}
+.hero h1{font-size:clamp(46px,7vw,82px);line-height:.95;letter-spacing:-3px}
+.hero h1 span{color:var(--gold)}
+.hero p{margin:25px 0 30px;max-width:600px;font-size:18px;line-height:1.7;color:#eee}
+.buttons{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 23px;border-radius:999px;text-decoration:none;font-weight:700;cursor:pointer;border:0}
+.gold{background:var(--gold);color:var(--dark)}
+.outline{border:1px solid #fff8;color:#fff}
+.hero-logo{text-align:center}
+.hero-logo img{width:min(420px,78vw);aspect-ratio:1;object-fit:cover;border-radius:24px;box-shadow:0 25px 70px #0006}
+section{padding:78px 7%}
+.section-head{text-align:center;margin-bottom:38px}
+.section-head h2{font-size:38px;color:var(--navy);margin-bottom:10px}
+.section-head p{color:var(--muted)}
+.gold-line{width:70px;height:3px;background:var(--gold);margin:15px auto}
+.filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:30px}
+.filter{border:1px solid #ddd;background:#fff;padding:9px 17px;border-radius:999px;cursor:pointer}
+.filter.active,.filter:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.product{background:#fff;border:1px solid #eee;border-radius:18px;overflow:hidden;box-shadow:0 8px 25px #1914460f;transition:.2s}
+.product:hover{transform:translateY(-5px);box-shadow:0 15px 35px #19144618}
+.product img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.product-info{padding:18px}
+.badge{font-size:11px;color:var(--navy);font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.product h3{margin:8px 0 6px;color:var(--navy)}
+.product p{font-size:13px;line-height:1.5;color:var(--muted);min-height:40px}
+.price{font-size:20px;font-weight:800;margin:14px 0}
+.order{width:100%;text-align:center}
+.about{background:#f1effb}
+.about-wrap{max-width:900px;margin:auto;text-align:center}
+.about-wrap p{line-height:1.9;color:#555}
+.cta{background:var(--navy);color:#fff;text-align:center}
+.cta h2{font-size:40px;margin-bottom:14px}
+.cta p{color:#ddd;margin-bottom:24px}
+footer{background:#15132f;color:#bbb;text-align:center;padding:24px 7%;font-size:13px}
+.empty{text-align:center;color:#777;grid-column:1/-1;padding:40px}
+@media(max-width:900px){.products{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr;text-align:center}.hero p{margin-left:auto;margin-right:auto}.buttons{justify-content:center}}
+@media(max-width:550px){nav{display:none}.products{grid-template-columns:1fr 1fr;gap:12px}.product-info{padding:13px}.product p{min-height:auto}.hero{padding:55px 6%}section{padding:60px 5%}.hero h1{letter-spacing:-2px}.section-head h2{font-size:32px}}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="#">
+    <img src="images/logo.jpg" alt="t Option logo">
+    <span>t Option</span>
+  </a>
+  <nav>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <div class="kicker">WEAR YOUR CHOICE</div>
+    <h1>Style that feels<br><span>like you.</span></h1>
+    <p>Discover fashion pieces designed for everyday confidence — T-Shirts, Panjabis, Pants and Customized Jerseys.</p>
+    <div class="buttons">
+      <a class="btn gold" href="#shop">Explore Collection</a>
+      <a class="btn outline" href="#contact">Contact Us</a>
+    </div>
+  </div>
+  <div class="hero-logo"><img src="images/logo.jpg" alt="t Option"></div>
+</section>
+
+<section id="shop">
+  <div class="section-head">
+    <h2>Our Collection</h2>
+    <div class="gold-line"></div>
+    <p>Choose your style. Wear your choice.</p>
+  </div>
+  <div class="filters">
+    <button class="filter active" data-filter="all">All</button>
+    <button class="filter" data-filter="tshirt">T-Shirt</button>
+    <button class="filter" data-filter="panjabi">Panjabi</button>
+    <button class="filter" data-filter="pants">Pants</button>
+    <button class="filter" data-filter="jersey">Custom Jersey</button>
+  </div>
+  <div class="products" id="productGrid"></div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-wrap">
+    <div class="section-head">
+      <h2>About t Option</h2>
+      <div class="gold-line"></div>
+    </div>
+    <p>t Option is a clothing brand built around choice, comfort and personal style. Our goal is to make it easier for you to find clothing that matches your personality and occasion.</p>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <h2>Ready to wear your choice?</h2>
+  <p>For orders, customization and product information, contact us directly.</p>
+  <!-- Replace the # below with your WhatsApp link, e.g. https://wa.me/8801XXXXXXXXX -->
+  <a class="btn gold" href="#">Order on WhatsApp</a>
+</section>
+
+<footer>© 2026 t Option — Wear Your Choice. All Rights Reserved.</footer>
+
+<script src="products.js"></script>
+<script>
+const grid=document.getElementById("productGrid");
+const filters=document.querySelectorAll(".filter");
+function categoryName(c){return {tshirt:"T-Shirt",panjabi:"Panjabi",pants:"Pants",jersey:"Custom Jersey"}[c]||c}
+function render(filter="all"){
+  const list=filter==="all"?products:products.filter(p=>p.category===filter);
+  grid.innerHTML=list.length?list.map((p,i)=>`
+    <article class="product">
+      <img src="${p.image}" alt="${p.name}" onerror="this.src='images/tshirt.svg'">
+      <div class="product-info">
+        <div class="badge">${categoryName(p.category)}</div>
+        <h3>${p.name}</h3>
+        <p>${p.description}</p>
+        <div class="price">${p.price}</div>
+        <a class="btn gold order" href="#contact">Order Now</a>
+      </div>
+    </article>`).join(""):`<div class="empty">No products in this category yet.</div>`;
+}
+filters.forEach(btn=>btn.addEventListener("click",()=>{
+  filters.forEach(x=>x.classList.remove("active"));
+  btn.classList.add("active");
+  render(btn.dataset.filter);
+}));
+render();
+</script>
+</body>
+</html>
