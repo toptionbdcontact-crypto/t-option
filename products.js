@@ -23,28 +23,28 @@ const products = [
     name: "Classic T-Shirt",
     category: "tshirt",
     price: "৳ 650",
-    image: "images/tshirt.svg",
+    image: "tshirt.svg",
     description: "Premium everyday T-Shirt."
   },
   {
     name: "Premium Panjabi",
     category: "panjabi",
     price: "৳ 1,250",
-    image: "images/panjabi.svg",
+    image: "panjabi.svg",
     description: "Elegant Panjabi for special occasions."
   },
   {
     name: "Comfort Pants",
     category: "pants",
     price: "৳ 950",
-    image: "images/pants.svg",
+    image: "pants.svg",
     description: "Comfortable fit for everyday wear."
   },
   {
     name: "Custom Team Jersey",
     category: "jersey",
     price: "৳ 750",
-    image: "images/jersey.svg",
+    image: "jersey.svg",
     description: "Customized jerseys for teams and events."
   }
 ];

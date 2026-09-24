@@ -61,7 +61,7 @@ footer{background:#15132f;color:#bbb;text-align:center;padding:24px 7%;font-size
 
 <header>
   <a class="brand" href="#">
-    <img src="images/logo.jpg" alt="t Option logo">
+    <img src="logo.jpg" alt="t Option logo">
     <span>t Option</span>
   </a>
   <nav>
@@ -81,7 +81,7 @@ footer{background:#15132f;color:#bbb;text-align:center;padding:24px 7%;font-size
       <a class="btn outline" href="#contact">Contact Us</a>
     </div>
   </div>
-  <div class="hero-logo"><img src="images/logo.jpg" alt="t Option"></div>
+  <div class="hero-logo"><img src="logo.jpg" alt="t Option"></div>
 </section>
 
 <section id="shop">
@@ -128,7 +128,7 @@ function render(filter="all"){
   const list=filter==="all"?products:products.filter(p=>p.category===filter);
   grid.innerHTML=list.length?list.map((p,i)=>`
     <article class="product">
-      <img src="${p.image}" alt="${p.name}" onerror="this.src='images/tshirt.svg'">
+      <img src="${p.image}" alt="${p.name}" onerror="this.src='tshirt.svg'">
       <div class="product-info">
         <div class="badge">${categoryName(p.category)}</div>
         <h3>${p.name}</h3>
