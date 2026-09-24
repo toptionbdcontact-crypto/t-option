@@ -20,11 +20,11 @@
 
 const products = [
   {
-    name: "Classic T-Shirt",
+    name: "Classic Black T-Shirt",
     category: "tshirt",
-    price: "৳ 650",
+    price: "৳ 550",
     image: "tshirt.svg",
-    description: "Premium everyday T-Shirt."
+    description: "Premium Black T-Shirt."
   },
   {
     name: "Premium Panjabi",
