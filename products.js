@@ -23,7 +23,7 @@ const products = [
     name: "Classic Black T-Shirt",
     category: "tshirt",
     price: "৳ 550",
-    image: "tshirt.svg",
+    image: "Black t shirt jpg.jpg",
     description: "Premium Black T-Shirt."
   },
   {
