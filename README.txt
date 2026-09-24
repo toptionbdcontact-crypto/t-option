@@ -26,7 +26,7 @@ Open `index.html` and find:
 `<!-- Replace the # below with your WhatsApp link ... -->`
 
 Replace the `href="#"` with:
-`href="https://wa.me/8801XXXXXXXXX"`
+`href="https://wa.me/8801612536507"`
 
 Use your full number with country code and without `+`, spaces or dashes.
 
